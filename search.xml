@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>post title</title>
+    <url>/2020/03/04/post-title/</url>
+    <content><![CDATA[<h2 id="第一章-简单工厂"><a href="#第一章-简单工厂" class="headerlink" title="第一章   简单工厂"></a>第一章   简单工厂</h2><h2 id="第二章-策略模式"><a href="#第二章-策略模式" class="headerlink" title="第二章   策略模式"></a>第二章   策略模式</h2><p>封装算法</p>
+<h2 id="第三章-单一指责原则"><a href="#第三章-单一指责原则" class="headerlink" title="第三章   单一指责原则"></a>第三章   单一指责原则</h2><h2 id="第四章-开放-封闭原则"><a href="#第四章-开放-封闭原则" class="headerlink" title="第四章   开放-封闭原则"></a>第四章   开放-封闭原则</h2><h2 id="第五章-依赖倒转原则"><a href="#第五章-依赖倒转原则" class="headerlink" title="第五章   依赖倒转原则"></a>第五章   依赖倒转原则</h2><h2 id="第六章-装饰模式"><a href="#第六章-装饰模式" class="headerlink" title="第六章   装饰模式"></a>第六章   装饰模式</h2><ul>
+<li>装饰模式是用来：<strong>动态的给对象加上额外的职责</strong></li>
+</ul>
+<h4 id="使用到的地方"><a href="#使用到的地方" class="headerlink" title="使用到的地方"></a>使用到的地方</h4><ol>
+<li>Spring中BeanDefinitionDecorator</li>
+<li>commons-collections包中ListUtils</li>
+</ol>
+<h4 id="装饰模式和继承的区别"><a href="#装饰模式和继承的区别" class="headerlink" title="装饰模式和继承的区别"></a>装饰模式和继承的区别</h4><ul>
+<li>装饰者模式强调的是<strong>动态</strong>的扩展, 而继承关系是<strong>静态的</strong>.</li>
+<li><strong>组合优于继承</strong></li>
+</ul>
+<h4 id="装饰和建造者"><a href="#装饰和建造者" class="headerlink" title="装饰和建造者"></a>装饰和建造者</h4><ul>
+<li>Builder模式是一种<strong>创建型</strong>的设计模式. <strong>旨在解决对象的差异化构建的问题</strong>.</li>
+<li>装饰者模式是一种<strong>结构型</strong>的设计模式. <strong>旨在处理对象和类的组合关系</strong>.</li>
+</ul>
+<blockquote>
+<p>Builder模式的<strong>差异化构建</strong>是<strong>可预见</strong>的, 而装饰者模式实际上提供了一种不可预见的扩展组合关系.</p>
+</blockquote>
+<p>对象，ProductInfoVo， 本来只有商品的 id、 name</p>
+<p>但是我还需要他的 库存信息？ 加上 stock信息</p>
+<p>还需要供应信息？加上供应商信息</p>
+<p>还需要操作人信息？加上操作人信息 </p>
+<p>唉好像思路不对</p>
+<h4 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h4><ul>
+<li>在不改变原有类结构基础上，新增或者限制或者改造功能时候。</li>
+</ul>
+<h2 id="第七章-代理模式"><a href="#第七章-代理模式" class="headerlink" title="第七章 代理模式"></a>第七章 代理模式</h2><p><strong>代理模式</strong>（proxy）， 为其他对象提供一种代理以控制对这个对象的访问。</p>
+<h4 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h4><ol>
+<li>远程代理 ：为一个对象在不同的地址空间提供局部代表。这样可以隐藏一个对象存在于不同地址空间的事实</li>
+<li>虚拟代理 ：根据需要创建开销很道德对象。通过它来存放实例化需要很长时间的真实对象</li>
+<li>安全代理 ：安全代理，用来控制真实对象访问时的权限</li>
+<li>智能指引 ： 是指当调用真实对象时，代理处理另外一些事</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/03/03/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
