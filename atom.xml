@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-02T16:29:27.330Z</updated>
+  <updated>2020-10-11T18:19:23.576Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo 常用命令</title>
+    <link href="http://yoursite.com/2020/10/12/hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2020/10/12/hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2020-10-11T18:18:10.000Z</published>
+    <updated>2020-10-11T18:19:23.576Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;hexo-常用命令&quot;&gt;&lt;a href=&quot;#hexo-常用命令&quot; class=&quot;headerlink&quot; title=&quot;hexo 常用命令&quot;&gt;&lt;/a&gt;hexo 常用命令&lt;/h1&gt;&lt;h3 id=&quot;hexo-server&quot;&gt;&lt;a href=&quot;#hexo-server&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="note" scheme="http://yoursite.com/tags/note/"/>
+    
+  </entry>
   
   <entry>
     <title>test1</title>
