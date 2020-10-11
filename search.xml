@@ -36,17 +36,7 @@
       </tags>
   </entry>
   <entry>
-    <title>test1</title>
-    <url>/2020/08/03/test1/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>test_site</title>
-    <url>/2020/08/03/test-site/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>post title</title>
+    <title>设计模式学习</title>
     <url>/2020/03/04/post-title/</url>
     <content><![CDATA[<h2 id="第一章-简单工厂"><a href="#第一章-简单工厂" class="headerlink" title="第一章   简单工厂"></a>第一章   简单工厂</h2><h2 id="第二章-策略模式"><a href="#第二章-策略模式" class="headerlink" title="第二章   策略模式"></a>第二章   策略模式</h2><p>封装算法</p>
 <h2 id="第三章-单一指责原则"><a href="#第三章-单一指责原则" class="headerlink" title="第三章   单一指责原则"></a>第三章   单一指责原则</h2><h2 id="第四章-开放-封闭原则"><a href="#第四章-开放-封闭原则" class="headerlink" title="第四章   开放-封闭原则"></a>第四章   开放-封闭原则</h2><h2 id="第五章-依赖倒转原则"><a href="#第五章-依赖倒转原则" class="headerlink" title="第五章   依赖倒转原则"></a>第五章   依赖倒转原则</h2><h2 id="第六章-装饰模式"><a href="#第六章-装饰模式" class="headerlink" title="第六章   装饰模式"></a>第六章   装饰模式</h2><ul>
