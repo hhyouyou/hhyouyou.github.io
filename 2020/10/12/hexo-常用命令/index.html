@@ -129,7 +129,7 @@
           <span class="date-time info">On
             <span class="date">2020-10-12T02:18:10+08:00</span>
             <!--<span class="date">2020-10-12</span>
-            <span class="time">02:20:55</span> -->
+            <span class="time">02:24:11</span> -->
           </span>
           
         </div>
@@ -146,8 +146,33 @@
         <!-- Post Main Content -->
         <div class="post-content">
           <h1 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h1><h3 id="hexo-server"><a href="#hexo-server" class="headerlink" title="hexo server"></a>hexo server</h3><p>启动服务 ， 一般用于本地预览</p>
-<p>今天先这样，回头继续补</p>
+<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
 
+<p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。</p>
+<p>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>部署网站。</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>-g</code>, <code>--generate</code></td>
+<td align="left">部署之前预先生成静态文件</td>
+</tr>
+</tbody></table>
+<p>该命令可以简写为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="推送文章"><a href="#推送文章" class="headerlink" title="推送文章"></a>推送文章</h2><h3 id="hexo-clean-amp-amp-hexo-d-g"><a href="#hexo-clean-amp-amp-hexo-d-g" class="headerlink" title="hexo clean &amp;&amp; hexo d -g"></a>hexo clean &amp;&amp; hexo d -g</h3>
         </div>
         <!-- Comments -->
         
