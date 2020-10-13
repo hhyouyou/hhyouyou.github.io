@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <!-- Html Head Tag-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="djx">
+  
+  
+  <!-- Open Graph Data -->
+  <meta property="og:title" content="java-jvm"/>
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="Hexo"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://yoursite.com"/>
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/favicon.ico">
+  
+
+  <!-- Site Title -->
+  <title>Hexo</title>
+
+  <!-- Bootstrap CSS -->
+  
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  <!-- Google Analytics -->
+  
+
+  <!-- BaiDu Analytics -->
+  
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+  <body>
+    <!-- Page Header -->
+
+
+<nav class="navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse site-menu">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="mailto:<dongjingxiwin@outlook.com>">
+                            
+                                Email
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/hhyouyou" target="_blank" rel="noopener">
+                            
+                                <i class="icon fa fa-github fa-lg"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="site-header header-background intro-header" style="background-image: url(/img/island.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-title with-background-image">
+          <p class="title">java-jvm</p>
+          <p class="subtitle"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By djx</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On 
+            <!-- <span class="date">2020-10-12T03:01:13+08:00</span> -->
+            <span class="date">2020-10-12</span>
+            <span class="time">10:32:10</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <p>[TOC]</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: Java-jvm</span><br><span class="line">date: 2020-10-12 02:18:10</span><br><span class="line">tags: note</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="Jvm"><a href="#Jvm" class="headerlink" title="Jvm"></a>Jvm</h1><p>jvm有哪些点？</p>
+<h2 id="一、运行时数据区域"><a href="#一、运行时数据区域" class="headerlink" title="一、运行时数据区域"></a>一、运行时数据区域</h2><h3 id="程序计数器-program-counter-register"><a href="#程序计数器-program-counter-register" class="headerlink" title="程序计数器 program counter register"></a>程序计数器 program counter register</h3><p><strong>线程私有</strong></p>
+<p>记录当前线程正在执行的虚拟机字节码指令的地址（如果正在执行的是本地方法native则为空）</p>
+<p><strong>在这里，其实有两个“当前”，一个是：当前正在被 CPU 执行的线程，另一个是：当前这个被执行的线程中正在被执行的字节码指令</strong>。<strong>字节码解释器工作时就是改变程序计数器的值来选取下一条需要执行的字节码</strong>。</p>
+<p>线程切换后，能恢复到正在执行的字节码的位置，所以每个线程都需要有自己的程序计数器。</p>
+<h3 id="虚拟机栈-vm-stack"><a href="#虚拟机栈-vm-stack" class="headerlink" title="虚拟机栈 vm stack"></a>虚拟机栈 vm stack</h3><p>每个Java 方法在执行的同时会创建一个栈帧用于存储局部变量表、操作数栈、常量池引用等信息。从方法调用直至执行完成的过程，对应着一个栈帧在Java虚拟机栈中的入栈和出栈的过程。</p>
+<p>条线程都有一个独立的栈（VM Stack）。每个方法执行时都会创建一个栈帧，也就是说，当有一条线程执行多个方法的时候，就有一个栈，栈中有多个栈帧。</p>
+<blockquote>
+<p>Java 虚拟机规范中规定了虚拟机栈可能出现的两种异常状况：StackOverflowError 和 OutOfMemoryError。</p>
+<p>StackOverflowError：若当前线程请求栈的深度超过当前Java虚拟机栈的最大深度的时候就会抛出StackOverflowError</p>
+<p>OutOfMemoryError ： 若虚拟机栈动态扩展过程中，如果线程请求空间无法申请到足够的内存，就会抛出 OutOfMemoryError</p>
+</blockquote>
+<h3 id="本地方法栈-native-method-stack"><a href="#本地方法栈-native-method-stack" class="headerlink" title="本地方法栈 native method stack"></a>本地方法栈 native method stack</h3><p><strong>线程私有</strong></p>
+<p>本地方法栈与虚拟机栈类似，虚拟机栈是执行Java 方法开辟的内存空间，而本地方法栈是执行Native方法开辟的内存空间。与虚拟机栈一样，本地方法栈也会抛出这两个异常，条件也是类似的。</p>
+<h3 id="堆-heap"><a href="#堆-heap" class="headerlink" title="堆 heap"></a>堆 heap</h3><p>堆是所有线程共享的一块区域，主要用来存放对象和数组。</p>
+<p>在Java 虚拟机规范中有描述，所有的对象实例和数组都要在堆上分配，但是随着 JIT(JUST-IN-TIME)编译器的发展与逃逸分析技术的逐渐成熟，并不是所有对象都只在堆上分配了，比如：随着逃逸分析技术的逐渐成熟，在即时能被回收的对象也有可能在虚拟机栈上分配。</p>
+<p>由于现在都采用分代回收算法，所以从内存回收的角度看，堆还可以细分为 ： 新生代、老年代。</p>
+<p>新生代有可以分为：Eden空间、From Survivor 空间，To Survivor空间</p>
+<h3 id="方法区-method-area"><a href="#方法区-method-area" class="headerlink" title="方法区 method area"></a>方法区 method area</h3><p> 方法区 和堆一样也是所有线程共享的一块区域，主要用来存储已经被虚拟机加载的类信息、常量、静态变量、即使编译器（JIT）编译后产生的代码等数据。虽然Java 虚拟机规范把方法区描述为堆的一个逻辑部分，但是它却又一个别名叫做Non-heap非堆，用以区分堆。</p>
+<h3 id="运行时常量池-runtime-constant-pool"><a href="#运行时常量池-runtime-constant-pool" class="headerlink" title="运行时常量池 runtime constant pool"></a>运行时常量池 runtime constant pool</h3><p>在1.7以及之后的版本，已经从方法区种移除。在堆heap中开辟了一块区域存放运行时常量池。</p>
+<p>运行时常量池主要存字面量和符号引用</p>
+<p>字面量：常量、静态变量等</p>
+<p>符号引用：类的完全限定名、字段名称和描述符、方法名称和描述符</p>
+<h3 id="直接内存-direct-memory"><a href="#直接内存-direct-memory" class="headerlink" title="直接内存 direct memory"></a>直接内存 direct memory</h3><p>直接内存并不是jvm运行时数据区的一部分，也不是虚拟规范中定义的内存区，但是这部分内存也被频繁使用。而且可能会导致oom。</p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://juejin.im/post/5c3d3121e51d4551741171fe" target="_blank" rel="noopener">在Java虚拟机中，字符串常量到底存放在哪</a></p>
+<p><a href="https://juejin.im/post/6844904119497392141" target="_blank" rel="noopener">java运行时数据区</a></p>
+
+        </div>
+        <!-- Comments -->
+        
+    
+
+    
+
+    
+    
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            id: '{{ page.date }}',
+            owner: 'hhyouyou',
+            repo: 'https://github.com/hhyouyou/comment.git',
+            oauth: {
+                client_id: '81c16ca8cffdd1fe5e2a',
+                client_secret: 'f4e49ad0cbe37d1d83415df6832b04e69f2d0db5',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+    
+
+    
+
+    
+
+    
+
+
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+    
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <p class="copyright text-muted">
+        &copy;  2020
+        <span class="with-love">
+            <i class="fa fa-heart"></i>
+        </span>
+        <span class="author">djx</span>
+
+        
+        <p class="copyright text-muted">
+          Powered By <a target="_blank" href="https://hexo.io/">Hexo.</a>
+        </p>
+        
+
+        
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        <p class="visit-statistics">
+            <span id="busuanzi_container_site_pv">
+              本站总访问：<span id="busuanzi_value_site_pv"></span>次
+              &nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+        <p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- After Footer Scripts -->
+
+<script src="/js/highlight.pack.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var codeBlocks = Array.prototype.slice.call(document.getElementsByTagName('pre'))
+    codeBlocks.forEach(function(block, index) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+
+
+
+  </body>
+</html>
+
