@@ -10,10 +10,10 @@
   
   
   <!-- Open Graph Data -->
-  <meta property="og:title" content="Hexo"/>
+  <meta property="og:title" content="图解http"/>
   <meta property="og:description" content="" />
   <meta property="og:site_name" content="Hexo"/>
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:image" content="http://yoursite.com"/>
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -48,8 +48,7 @@
 <meta name="generator" content="Hexo 4.2.0"></head>
 
   <body>
-    <!-- Archive Header -->
-<!-- Page Header -->
+    <!-- Page Header -->
 
 
 <nav class="navbar-custom navbar-fixed-top">
@@ -109,7 +108,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-title with-background-image">
-          <p class="title"></p>
+          <p class="title">图解http</p>
           <p class="subtitle"></p>
         </div>
       </div>
@@ -117,42 +116,69 @@
   </div>
 </header>
 
-<!-- Archive List -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      
-        <div class="archive-item">
-  <a href="/2020/03/04/post-title/" class="post-title">
-    设计模式学习
-  </a>
-  <div class="date text-muted">Posted on 2020-03-04 00:43:47</div>
-</div>
+<article>
+  <div class="container typo">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="post-info text-muted">
+          
+            <!-- Author -->
+            <span class="author info">By djx</span>
+          
+          <!-- Date -->
+          <span class="date-time info">On 
+            <!-- <span class="date">2020-10-31T16:44:23+08:00</span> -->
+            <span class="date">2020-10-31</span>
+            <span class="time">23:40:04</span>
+          </span>
+          
+        </div>
+        <!-- Tags -->
+        
+        <!-- Post Main Content -->
+        <div class="post-content">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本书对HTTP协议进行了全面系统的介绍。从HTTP协议的发展历史开始</p>
 
-      
-        <div class="archive-item">
-  <a href="/2020/03/03/hello-world/" class="post-title">
-    Hello World
-  </a>
-  <div class="date text-muted">Posted on 2020-03-03 23:29:33</div>
-</div>
+        </div>
+        <!-- Comments -->
+        
+    
 
-      
+    
 
+    
+
+    
+    
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            id: window.location.pathname,
+            repo: 'comment',
+            owner: 'hhyouyou',
+            admin: 'hhyouyou'
+        })
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+
+    
+
+    
+
+    
+
+
+      </div>
     </div>
   </div>
-</div>
-<!-- Pagination -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
-      <ul class="pagination">
-          
-          
-      </ul>
-    </div>
-  </div>
-</div>
+</article>
 
 
 
