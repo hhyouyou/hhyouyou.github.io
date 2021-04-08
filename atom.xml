@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Djx-blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://dongjingxi.com/"/>
   <updated>2020-11-26T17:06:55.576Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://dongjingxi.com/</id>
   
   <author>
     <name>djx</name>
@@ -17,9 +17,9 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>qt-learn</title>
-    <link href="http://yoursite.com/2020/11/26/qt-learn/"/>
-    <id>http://yoursite.com/2020/11/26/qt-learn/</id>
+    <title>Qt-Learn</title>
+    <link href="http://dongjingxi.com/2020/11/26/qt-learn/"/>
+    <id>http://dongjingxi.com/2020/11/26/qt-learn/</id>
     <published>2020-11-26T15:02:27.120Z</published>
     <updated>2020-11-26T17:06:55.576Z</updated>
     
@@ -40,9 +40,9 @@
   </entry>
   
   <entry>
-    <title>cpp-learn</title>
-    <link href="http://yoursite.com/2020/11/24/cpp-learn/"/>
-    <id>http://yoursite.com/2020/11/24/cpp-learn/</id>
+    <title>Cpp-Learn</title>
+    <link href="http://dongjingxi.com/2020/11/24/cpp-learn/"/>
+    <id>http://dongjingxi.com/2020/11/24/cpp-learn/</id>
     <published>2020-11-24T13:38:20.488Z</published>
     <updated>2020-11-26T15:02:34.816Z</updated>
     
@@ -63,9 +63,9 @@
   </entry>
   
   <entry>
-    <title>图解http</title>
-    <link href="http://yoursite.com/2020/10/31/%E5%9B%BE%E8%A7%A3http/"/>
-    <id>http://yoursite.com/2020/10/31/%E5%9B%BE%E8%A7%A3http/</id>
+    <title>图解Http</title>
+    <link href="http://dongjingxi.com/2020/10/31/%E5%9B%BE%E8%A7%A3http/"/>
+    <id>http://dongjingxi.com/2020/10/31/%E5%9B%BE%E8%A7%A3http/</id>
     <published>2020-10-31T08:44:23.034Z</published>
     <updated>2020-11-01T01:41:33.667Z</updated>
     
@@ -86,9 +86,9 @@
   </entry>
   
   <entry>
-    <title>java集合框架</title>
-    <link href="http://yoursite.com/2020/10/12/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/"/>
-    <id>http://yoursite.com/2020/10/12/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</id>
+    <title>Java集合框架</title>
+    <link href="http://dongjingxi.com/2020/10/12/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/"/>
+    <id>http://dongjingxi.com/2020/10/12/java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</id>
     <published>2020-10-11T19:01:13.116Z</published>
     <updated>2020-10-11T19:10:02.579Z</updated>
     
@@ -110,9 +110,9 @@
   </entry>
   
   <entry>
-    <title>java并发编程</title>
-    <link href="http://yoursite.com/2020/10/12/java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/"/>
-    <id>http://yoursite.com/2020/10/12/java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</id>
+    <title>Java并发编程</title>
+    <link href="http://dongjingxi.com/2020/10/12/java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/"/>
+    <id>http://dongjingxi.com/2020/10/12/java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/</id>
     <published>2020-10-11T19:01:13.107Z</published>
     <updated>2020-10-11T19:03:56.295Z</updated>
     
@@ -134,9 +134,9 @@
   </entry>
   
   <entry>
-    <title>java基础</title>
-    <link href="http://yoursite.com/2020/10/12/java%E5%9F%BA%E7%A1%80/"/>
-    <id>http://yoursite.com/2020/10/12/java%E5%9F%BA%E7%A1%80/</id>
+    <title>Java基础</title>
+    <link href="http://dongjingxi.com/2020/10/12/java%E5%9F%BA%E7%A1%80/"/>
+    <id>http://dongjingxi.com/2020/10/12/java%E5%9F%BA%E7%A1%80/</id>
     <published>2020-10-11T19:01:13.097Z</published>
     <updated>2020-10-11T19:04:47.159Z</updated>
     
@@ -158,9 +158,9 @@
   </entry>
   
   <entry>
-    <title>java-jvm</title>
-    <link href="http://yoursite.com/2020/10/12/java-jvm/"/>
-    <id>http://yoursite.com/2020/10/12/java-jvm/</id>
+    <title>Java-Jvm</title>
+    <link href="http://dongjingxi.com/2020/10/12/java-jvm/"/>
+    <id>http://dongjingxi.com/2020/10/12/java-jvm/</id>
     <published>2020-10-11T19:01:13.089Z</published>
     <updated>2020-10-11T19:03:34.572Z</updated>
     
@@ -182,9 +182,9 @@
   </entry>
   
   <entry>
-    <title>java-IO</title>
-    <link href="http://yoursite.com/2020/10/12/java-IO/"/>
-    <id>http://yoursite.com/2020/10/12/java-IO/</id>
+    <title>Java-IO</title>
+    <link href="http://dongjingxi.com/2020/10/12/java-IO/"/>
+    <id>http://dongjingxi.com/2020/10/12/java-IO/</id>
     <published>2020-10-11T19:01:13.077Z</published>
     <updated>2020-10-11T19:03:18.171Z</updated>
     
@@ -206,9 +206,9 @@
   </entry>
   
   <entry>
-    <title>hexo 常用命令</title>
-    <link href="http://yoursite.com/2020/10/12/hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2020/10/12/hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <title>Hexo 常用命令</title>
+    <link href="http://dongjingxi.com/2020/10/12/hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://dongjingxi.com/2020/10/12/hexo-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2020-10-11T18:18:10.000Z</published>
     <updated>2021-04-08T15:38:52.645Z</updated>
     
@@ -226,14 +226,14 @@
     
     
     
-      <category term="note" scheme="http://yoursite.com/tags/note/"/>
+      <category term="note" scheme="http://dongjingxi.com/tags/note/"/>
     
   </entry>
   
   <entry>
     <title>设计模式学习</title>
-    <link href="http://yoursite.com/2020/03/04/post-title/"/>
-    <id>http://yoursite.com/2020/03/04/post-title/</id>
+    <link href="http://dongjingxi.com/2020/03/04/post-title/"/>
+    <id>http://dongjingxi.com/2020/03/04/post-title/</id>
     <published>2020-03-03T16:43:47.000Z</published>
     <updated>2020-10-11T18:41:55.148Z</updated>
     
@@ -255,8 +255,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2020/03/03/hello-world/"/>
-    <id>http://yoursite.com/2020/03/03/hello-world/</id>
+    <link href="http://dongjingxi.com/2020/03/03/hello-world/"/>
+    <id>http://dongjingxi.com/2020/03/03/hello-world/</id>
     <published>2020-03-03T15:29:33.864Z</published>
     <updated>2020-03-03T15:29:33.864Z</updated>
     
